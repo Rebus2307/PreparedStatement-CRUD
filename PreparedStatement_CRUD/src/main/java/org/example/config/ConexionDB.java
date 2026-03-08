@@ -5,13 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionDB {
-    private static final String URL = "jdbc:mysql://localhost:3306/dbname?"
+    private static final String URL = "jdbc:mysql://localhost:3306/inventario?" //Nombre de la base de datos
             + "allowPublicKeyRetrieval=true&"
             + "useSSL=false&"
             + "serverTimezone=UTC";
 
-    private static final String USER = "root";
-    private static final String PASS = "jesus2004";
+    private static final String USER = "root"; //Usuario de tu base de datos
+    private static final String PASS = "23072003"; // Contraseña de tu base de datos
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection getConexion() throws SQLException {
